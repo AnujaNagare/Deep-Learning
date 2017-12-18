@@ -20,4 +20,3 @@ classifier.fit(x_train, y_train, steps=200)
 predictions = list(classifier.predict(x_test, as_iterable=True))
 score = metrics.accuracy_score(y_test, predictions)
 print('Accuracy: {0:f}'.format(score))
-
