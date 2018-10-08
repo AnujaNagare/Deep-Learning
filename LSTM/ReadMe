@@ -1,0 +1,37 @@
+### Recurrent Neural Networks
+
+- Networks with loops in them, allowing information to persist.
+- Neural network, A, takes some input x_t and outputs a value h_t
+- A loop allows information to be passed from one step of the network to the next.
+- A recurrent neural network can be thought of as multiple copies of the same network, each passing a message to a successor. 
+- intimately related to sequences and lists.
+- example:"language model trying to predict the next word based on the previous ones"
+
+
+
+### Creating a Chatbot Using Sequence Models Built With LSTM RNNs
+
+- For better accuracy few hundres of thousands of records for each class are required
+
+
+#### Encoder-Decoder Architecture
+  - Encoder-decoder recurrent neural network architecture is the core technology inside Google’s translate service.
+  - “Sutskever model” for direct end-to-end machine translation.
+  - “Cho model” that extends the architecture with GRU units and an attention mechanism.
+  
+  - is a standard approach for both neural machine translation (NMT) and sequence-to-sequence (seq2seq) prediction in general.
+  - The key benefits of the approach are:
+    - ability to train a single end-to-end model directly on source and target sentences and 
+    - ability to handle variable length input and output sequences of text.
+  
+
+#### Sequence-to-Sequence Prediction Problems
+
+ - sequence prediction problem that takes a sequence as input and requires a sequence prediction as output. 
+ - These are called sequence-to-sequence prediction problems, or seq2seq for short.
+ 
+
+
+ref: http://colah.github.io/posts/2015-08-Understanding-LSTMs/
+ref: https://machinelearningmastery.com/encoder-decoder-recurrent-neural-network-models-neural-machine-translation/
+ref: https://machinelearningmastery.com/encoder-decoder-long-short-term-memory-networks/
